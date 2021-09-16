@@ -1,33 +1,45 @@
-import react ,{useState} from "react";
-import './Items.css';
-import Card from "../card/Card";
+import "./Items.css";
+import Card from "../Card/Card";
 import ButtonComponent from "../ButtonComponents/ButtonComponent";
-import App from "../../App";
 
-const Item= ({ styling, selected, id, url, alt, title, text, waterForest, co2, amount, onClick})=>{
-
-return(
-   <Card>
-    <div className={styling}  style ={{border : id === selected ? '2px solid red': 'white'}} onClick={onClick}>
+const Item = ({
+  selected,
+  id,
+  onClick,
+  url,
+  alt,
+  title,
+  text,
+  amount,
+  co2,
+  waterForest,
+}) => {
+  return (
+    <Card>
+      <div
+        className="paneClass"
+        style={{ border: id === selected ? "2px solid red" : "white" }}
+        onClick={onClick}
+      >
         <div>
-            <img src = {url} alt = {alt}></img>
+          <img src={url} alt={alt}></img>
         </div>
-        <div className = 'description'>
-           <h4>{title}</h4>
-            <p>{text}</p>
+        <div className="description">
+          <h4>{title}</h4>
+          <p>{text}</p>
         </div>
-        <div className='details'>
-            <div className='amount'>{amount}</div>
-            <div className='water-forest'>{waterForest}</div>
-            <div className='co2'>{co2} CO<sub>2</sub></div>
+        <div className="details">
+          <div className="amount">{amount}</div>
+          <div className="water-forest">{waterForest}</div>
+          <div className="co2">
+            {co2} CO<sub>2</sub>
+          </div>
         </div>
-        <div style={{visibility : id === selected? 'visible' : 'hidden'}}>
-            <ButtonComponent ></ButtonComponent>
+        <div style={{ visibility: id === selected ? "visible" : "hidden" }}>
+          <ButtonComponent></ButtonComponent>
         </div>
-
-    </div>
+      </div>
     </Card>
-    );
-
-}; 
+  );
+};
 export default Item;

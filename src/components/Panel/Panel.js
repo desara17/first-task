@@ -1,45 +1,30 @@
-import React, {useState} from "react";
-import Card from'../card/Card';
-import Item from '../Item/Items';
-import './panel.css';
+import React, { useState } from "react";
+import Card from "../Card/Card";
+import Item from "../Item/Items";
+import "./panel.css";
 
-const Panel = ({inputs})=>{
+const Panel = ({ inputs }) => {
+  const [selected, setSelected] = useState(null);
 
-    const [selected,setSelected] = useState(null);
+  const onItemClicked = (id) => {
+    setSelected(id);
+  };
 
-    console.log('selected', selected)
-
-    const onItemClicked = (id) => {
-        setSelected(id)
-    }
-
-    console.log('selected', selected)
-
-return(
- <Card>
-     <div className ='container'>
-{
-    inputs.map((input)=> {
-        return (
-            <Item 
-                selected= {selected}
-                onClick={()=> onItemClicked(input.id)}
-                key={input.id}
-                styling={input.class}
-                id={input.id}
-                url={input.url}
-                alt={input.alt}
-                title={input.title}
-                text={input.text}
-                amount={input.amount}
-                waterForest={input.waterForest}
-                co2={input.co2}
+  return (
+    <Card>
+      <div className="container">
+        {inputs.map((input) => {
+          return (
+            <Item
+              selected={selected}
+              onClick={() => onItemClicked(input.id)}
+              key={input.id}
+              {...input}
             />
-        )
-    })
-}
-</div>
-</Card>
-);
+          );
+        })}
+      </div>
+    </Card>
+  );
 };
 export default Panel;
