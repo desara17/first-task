@@ -22,7 +22,7 @@ return(
     inputs.map((input)=> {
         return (
             <Item 
-                selected={selected}
+                selected= {selected}
                 onClick={()=> onItemClicked(input.id)}
                 key={input.id}
                 styling={input.class}
