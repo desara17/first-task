@@ -1,8 +1,8 @@
 
 import react from 'react';
 import './App.css';
-import HeaderComponent from './components/HeaderComponent';
-import Panel from './components/Panel'
+import HeaderComponent from './components/Header/HeaderComponent';
+import Panel from './components/Panel/Panel'
 
 
 function App() {

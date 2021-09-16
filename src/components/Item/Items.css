@@ -1,9 +1,6 @@
 
   .leftPane {
       border-radius: 25px;
-      width: 30%;
-      height: 100%;
-      float: left;
       border-collapse: collapse;
       overflow: hidden;  
       font-size: 1.2em;
@@ -11,9 +8,7 @@
  
   .middlePane {
     border-radius: 20px;
-    width: 30%;
-    height: 100%;
-    float: left;
+    
     border-collapse: collapse;
     overflow: hidden;
     margin-left: 10px;
@@ -22,9 +17,6 @@
   }
   .rightPane {
     border-radius: 20px;
-    width: 30%;
-    height: 100%;
-    position: relative;
     border-collapse: collapse;
     overflow: hidden;
     font-size: 1.2em;

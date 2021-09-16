@@ -1,8 +1,8 @@
 import react ,{useState} from "react";
 import './Items.css';
-import Card from "./Card";
-import ButtonComponent from "./ButtonComponent";
-import App from "../App";
+import Card from "../card/Card";
+import ButtonComponent from "../ButtonComponents/ButtonComponent";
+import App from "../../App";
 
 const Item= ({ styling, selected, id, url, alt, title, text, waterForest, co2, amount, onClick})=>{
 

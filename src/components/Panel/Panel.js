@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import Card from'./Card';
-import Item from './Items';
+import Card from'../card/Card';
+import Item from '../Item/Items';
 import './panel.css';
 
 const Panel = ({inputs})=>{
