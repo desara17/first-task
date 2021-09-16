@@ -1,0 +1,13 @@
+.container {
+    width: 90%;
+    height: 100% ;
+    margin: 5px;
+    display: flex;
+    
+  }
+
+  @media screen and (max-width : 600px) {
+    .container{
+    flex-direction : column;
+    }
+  }
