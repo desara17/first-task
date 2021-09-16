@@ -1,0 +1,10 @@
+.container {
+    width: 60%;
+    height: 100% ;
+    margin : 5px;
+    padding: 5px;
+  }
+  a{
+    color: royalblue;
+    text-decoration: none;
+    }

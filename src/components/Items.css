@@ -1,0 +1,64 @@
+
+  .leftPane {
+      border-radius: 25px;
+      width: 30%;
+      height: 100%;
+      float: left;
+      border-collapse: collapse;
+      overflow: hidden;  
+      font-size: 1.2em;
+  }
+ 
+  .middlePane {
+    border-radius: 20px;
+    width: 30%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  .rightPane {
+    border-radius: 20px;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-collapse: collapse;
+    overflow: hidden;
+    font-size: 1.2em;
+  }
+
+  
+  img{
+    width : 100%;
+    height:240px;
+  }
+  .description{
+    margin : 20px;
+  }
+  .details{
+    margin : 20px;
+  }
+  .water-forest, .amount{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.7em;
+    width: 27%;
+    float: left;
+    border-collapse: collapse;
+  }
+
+  .co2{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.5em;
+    margin : 2px;
+    color : red;
+    width: 27%;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+  
+  }
+  
