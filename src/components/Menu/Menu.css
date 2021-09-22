@@ -1,0 +1,42 @@
+.menu-icon img {
+  width: 44px;
+  height: 44px;
+}
+
+.menu-container {
+  float: right;
+}
+.menu-content {
+  width: 20%;
+  height: 100%;
+  float: right;
+  background-color: black;
+  color: white;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  position: absolute;
+}
+.cancelButton img {
+  width: 44px;
+  height: 44px;
+  float: right;
+  padding: 5px;
+  margin: 5px;
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.menu-items a {
+  padding: 20px;
+  width: 100%;
+  color: white;
+}
+.menu-items a:hover {
+  border-style: solid;
+  border-color: burlywood;
+  border-right: black;
+  border-left: black;
+}

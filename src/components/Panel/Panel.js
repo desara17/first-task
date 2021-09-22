@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useHistory } from "react";
 import Card from "../Card/Card";
 import Item from "../Item/Items";
 import "./panel.css";

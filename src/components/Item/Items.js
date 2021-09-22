@@ -36,7 +36,7 @@ const Item = ({
           </div>
         </div>
         <div style={{ visibility: id === selected ? "visible" : "hidden" }}>
-          <ButtonComponent></ButtonComponent>
+          <ButtonComponent id={id}></ButtonComponent>
         </div>
       </div>
     </Card>
