@@ -1,9 +1,4 @@
-import HeaderComponent from "./components/Header/HeaderComponent";
-import Panel from "./components/Panel/Panel";
-import Menu from "./components/Menu/Menu";
 
-const HomePage = () => {
-  const inputs = [
     {
       id: 1,
       url: "https://tse3.mm.bing.net/th?id=OIP.aT0HfqbZJ5egYXQw6CcD6wHaFP&pid=Api&P=0&w=231&h=164",
@@ -34,16 +29,4 @@ const HomePage = () => {
       amount: 240.0,
       waterForest: "16.0 🌳 & 94 l💧",
       co2: "9.95 t",
-    },
-  ];
-
-  return (
-    <div className="app-container">
-      <Menu />
-      <HeaderComponent />
-      <Panel inputs={inputs} />
-    </div>
-  );
-};
-
-export default HomePage;
+    }

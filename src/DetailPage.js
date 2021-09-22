@@ -4,8 +4,10 @@ import DetailItem from "./DetailItem";
 
 const DetailPage = () => {
   const { id } = useParams();
-
-  const backButtonHandler = () => {};
+  const history = useHistory();
+  const backButtonHandler = (event) => {
+    history.goback();
+  };
 
   const inputs = [
     {
@@ -46,9 +48,6 @@ const DetailPage = () => {
       {inputs.map((input) => {
         return <DetailItem checked={id} key={input.id} {...input} />;
       })}
-      <div>
-        <button onCLick={backButtonHandler}> Back</button>
-      </div>
     </div>
   );
 };

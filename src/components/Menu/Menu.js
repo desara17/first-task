@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import "./Menu.css";
 const Menu = () => {
   const [displayed, setDisplay] = useState(false);
-  console.log(displayed);
+
   const clickHandler = () => {
     setDisplay(true);
-    console.log("clicked");
   };
   const cancelClickHandler = () => {
     setDisplay(false);
-    console.log("canceled");
   };
   return (
     <div className="menu-container">

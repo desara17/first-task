@@ -1,5 +1,11 @@
 import "./DetailItem.css";
+import { useHistory } from "react-router-dom";
 const DetailItem = (props) => {
+  const history = useHistory();
+  const backButton = () => {
+    console.log(history);
+    history.goBack();
+  };
   return (
     <div>
       <div
@@ -15,6 +21,10 @@ const DetailItem = (props) => {
           <div className="item">${props.amount}</div>
           <div className="item"> {props.waterForest}</div>
           <div className="item">{props.co2}</div>
+        </div>
+
+        <div>
+          <button onClick={backButton}> Back </button>
         </div>
       </div>
     </div>
