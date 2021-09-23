@@ -41,7 +41,6 @@ const HomePage = () => {
     <div className="app-container">
       <Menu />
       <HeaderComponent />
-
       <Panel inputs={inputs} />
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useHistory } from "react";
+import React, { useState } from "react";
 import Card from "../Card/Card";
 import Item from "../Item/Items";
 import "./panel.css";
@@ -8,6 +8,7 @@ const Panel = ({ inputs }) => {
 
   const onItemClicked = (id) => {
     setSelected(id);
+    localStorage.setItem("prevId", id);
   };
 
   return (
@@ -16,7 +17,7 @@ const Panel = ({ inputs }) => {
         {inputs.map((input) => {
           return (
             <Item
-              selected={selected}
+              selected={parseInt(localStorage.getItem("prevId"))}
               onClick={() => onItemClicked(input.id)}
               key={input.id}
               {...input}
