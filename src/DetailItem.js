@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 const DetailItem = (props) => {
   const history = useHistory();
   const backButton = () => {
-    console.log(history);
     history.goBack();
   };
   return (
